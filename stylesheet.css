@@ -47,6 +47,7 @@ a {
     flex-direction: row;
     justify-content: center;
     padding-top: 1%;
+    width: 100%;
 }
 
 .navbar-list-left {
@@ -93,10 +94,6 @@ a {
     margin: 0;
     padding: 0;
     max-width: 100%;
-}
-
-.navbar-item {
-    padding: 0 40px;
 }
 
 .navbar-item a{
@@ -184,10 +181,82 @@ a {
     }
 }
 
+@media screen and (min-width: 1201px){
+    #desktop {
+        display: flex;
+        color: #feffff;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    #desktop a {
+        display: flex;
+        color: #feffff;
+        text-align: center;
+        padding: 0 40px;
+        text-decoration: none;
+        font-size: 1.5vw;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #mobile a {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1200px){
+
+    #mobile {
+        display: flex;
+        color: #feffff;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    #mobile a {
+        display: flex;
+        color: #feffff;
+        text-align: center;
+        padding: 1% 1%;
+        border-radius: 20px;
+        margin-left: 80%;
+        text-decoration: none;
+        font-size: 1.5vw;
+        font-weight: 500;
+        font-style: italic;
+        background-color: black;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #desktop a {
+        display: none;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .navbar-list-left{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+    }
 
     .index-container {
         flex-direction: column-reverse;
+        padding-top: 0;
     }
 
     .index-buttons {
