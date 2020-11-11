@@ -242,6 +242,14 @@ a {
         display: none;
     }
 
+    h1 {
+        font-size: 12vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
     .navbar-list {
         display: none;
     }
@@ -256,7 +264,7 @@ a {
 
     .index-container {
         flex-direction: column-reverse;
-        padding-top: 0;
+        padding-top: 4%;
     }
 
     .index-buttons {
@@ -267,7 +275,7 @@ a {
     }
 
     .index-buttons a {
-        font-size: 3vw;
+        font-size: 3.4vw;
     }
 
     #index-left video {
