@@ -15,6 +15,7 @@ h1 {
     font-weight: 600;
     font-style: italic;
     color: #171717;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -196,9 +197,17 @@ a {
     #navbar-homebutton {
         display: none;
     }
+
+    .test-wrapper {
+        font-size: 3vw;
+    }
 }
 
 @media screen and (max-width: 1200px){
+
+    .test-wrapper p {
+        font-size: 5vw;
+    }
 
     body {
         margin: 0;
@@ -353,8 +362,4 @@ a {
 
 .test-wrapper {
     margin-right: 35%;
-}
-
-.test-wrapper p {
-    font-size: 5vw;
 }
