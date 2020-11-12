@@ -201,9 +201,19 @@ a {
     .test-wrapper {
         font-size: 3vw;
     }
+
+    #active {
+        color: #171717;
+        font-weight: 400;
+    }
 }
 
 @media screen and (max-width: 1200px){
+
+    #active {
+        color: #129c78;
+        font-weight: 400;
+    }
 
     .test-wrapper p {
         font-size: 5vw;
