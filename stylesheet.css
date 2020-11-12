@@ -130,6 +130,7 @@ a {
 
 #index-left video {
     border-radius: 1vw;
+    margin-top: 4%;
 }
 
 #index-right {
@@ -175,6 +176,7 @@ a {
     color: #171717;
 }
 
+
 @media screen and (max-width: 1500px){
     .navbar-container a {
         font-size: 1.8vw;
@@ -182,65 +184,25 @@ a {
 }
 
 @media screen and (min-width: 1201px){
-    #desktop {
-        display: flex;
-        color: #feffff;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1em;
-    }
-
-    #desktop a {
-        display: flex;
-        color: #feffff;
-        text-align: center;
-        padding: 0 40px;
-        text-decoration: none;
-        font-size: 1.5vw;
-        font-weight: 500;
-        font-style: italic;
-    }
-
-    #mobile {
-        display: none;
-    }
-
-    #mobile a {
-        display: none;
-    }
 
     #index-left video {
         display: block;
     }
 
     #index-left img {
+        display: none;
+    }
+
+    #navbar-homebutton {
         display: none;
     }
 }
 
 @media screen and (max-width: 1200px){
 
-    #mobile {
-        display: flex;
-        color: #feffff;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1em;
-    }
-
-    #mobile a {
-        display: flex;
-        color: #feffff;
-        text-align: center;
-        padding: 1.5% 1%;
-        border-radius: 20px;
-        margin-left: 66%;
-        margin-top: 2%;
-        text-decoration: none;
-        font-size: 3vw;
-        font-weight: 500;
-        font-style: italic;
-        background-color: black;
+    body {
+        margin: 0;
+        margin-left: 5%;
     }
 
     #index-left video {
@@ -249,14 +211,6 @@ a {
 
     #index-left img {
         display: block;
-    }
-
-    #desktop {
-        display: none;
-    }
-
-    #desktop a {
-        display: none;
     }
 
     h1 {
@@ -267,18 +221,93 @@ a {
         font-size: 7vw;
     }
 
-    .navbar-list {
+    #navbar-list-index {
         display: none;
     }
 
-    .navbar-list-left{
-        display: block;
+    .navbar-container {
+        font-size: 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 1%;
+        width: 100%;
+    }
+    
+    .navbar-list-left {
+        display: none;
+        flex-basis: 100%;
+        flex-direction: row;
+        justify-content: left;
+        top: 0;
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    
+    .navbar-logo {
+        display: flex;
+        color: #feffff;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .navbar-logo a {
+        display: flex;
+        color: #feffff;
+        text-align: center;
+        padding: 0 40px;
+        text-decoration: none;
+        font-size: 2vw;
+        font-weight: 500;
+        font-style: italic;
+    }
+    
+    
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        flex-basis: 70%;
+        justify-content: center;
+        top: 0;
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        width: 20%;
+        margin-left: 80%;
+        margin-top: 0;
+        height: 100%;
     }
 
-    .navbar-container{
-        display: block;
+    .navbar-item {
+        padding: 0;
+        margin: 0;
+        margin-right: -20%;
     }
-
+    
+    .navbar-item a{
+        display: flex;
+        color: #feffff;
+        text-align: right;
+        text-decoration: none;
+        font-size: 2.5vw;
+        background-color: #171717;
+        padding: 15% 0;
+        border-radius: 1vw;
+        width: 75%;
+        justify-content: center;
+        margin: 4vw 0;
+        padding: 15% 0%;
+    }
+    
+    .navbar-item a:hover {
+        color: #129c78;
+    }
     .index-container {
         flex-direction: column-reverse;
         padding-top: 4%;
@@ -320,4 +349,12 @@ a {
         margin-bottom: -5%;
     }
 
+}
+
+.test-wrapper {
+    margin-right: 35%;
+}
+
+.test-wrapper p {
+    font-size: 5vw;
 }
