@@ -176,6 +176,30 @@ a {
     color: #171717;
 }
 
+.why img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2rem;
+}
+
+.flexbox-why{
+    display: flex;
+}
+
+.why-tekst{
+    width: 65%;
+    background-color: #0f7056;
+    border-radius: 3rem;
+    margin: 0.25%;
+}
+
+.why-bilde{
+    width: 25%;
+    border-radius: 25rem;
+    margin: 0.25%;
+}
+
+
 
 @media screen and (max-width: 1500px){
     .navbar-container a {
