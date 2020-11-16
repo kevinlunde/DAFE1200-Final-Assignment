@@ -114,6 +114,7 @@ a {
     color: #171717;
 }
 
+
 .index-container {
     display: flex;
     flex-direction: row;
@@ -212,6 +213,7 @@ a {
     border-radius: 1.5vw;
     margin: 0.25%;
     padding: 1%;
+    color: antiquewhite;
 }
 
 .why-bilde{
@@ -370,6 +372,10 @@ a {
         font-size: 1.8vh;
         color: #28d8a9;
         font-weight: 400;
+    }
+
+    .navbar-item a:hover {
+        color: #feffff;
     }
 
     .index-container {
