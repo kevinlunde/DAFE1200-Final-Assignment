@@ -1,8 +1,13 @@
+html {
+    height: 100vh;
+}
 
 body {
-    margin: 0 5%;
+    margin: 0;
     padding: 0;
     background-color: #129c78;
+    min-height: 100vh;
+    height: 100vh;
 }
 
 div {
@@ -88,7 +93,7 @@ a {
     display: flex;
     flex-direction: row;
     flex-basis: 70%;
-    justify-content: space-between;
+    justify-content: space-around;
     top: 0;
     width: 100%;
     list-style-type: none;
@@ -115,6 +120,8 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 4%;
+    margin: 0 4%;
+    padding-bottom: 5%;
 }
 
 .index-box {
@@ -143,14 +150,12 @@ a {
 #index-right h1, h2, h3 {
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 5%;
 }
 
 .index-buttons{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding-left: 6%;
     margin-top: 2%;
     width: auto;
 }
@@ -201,6 +206,55 @@ a {
 }
 
 
+.footer {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    font-size: 1vw;
+}
+
+#footer-copyright {
+    flex-basis: 33%;
+    text-align: center;
+    padding-left: 1%;
+    margin-bottom: 0.%;
+}
+
+#footer-address {
+    flex-basis: 33%;
+    text-align: center;
+    margin-bottom: 0.5%;
+}
+
+#footer-mail {
+    flex-basis: 33%;
+    text-align: center;
+    padding-right: 1%;
+    margin-bottom: 0.5%;
+}
+
+#index-mobile-header {
+    display: block;
+    width: 66%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-index {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 
 @media screen and (max-width: 1500px){
     .navbar-container a {
@@ -230,13 +284,17 @@ a {
         color: #171717;
         font-weight: 400;
     }
+
+    #index-mobile-header {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1200px){
 
     #active {
-        color: #129c78;
-        font-weight: 400;
+        color: #feffff;
+        font-weight: 600;
     }
 
     .test-wrapper p {
@@ -245,15 +303,10 @@ a {
 
     body {
         margin: 0;
-        margin-left: 5%;
     }
 
     #index-left video {
         display: none;
-    }
-
-    #index-left img {
-        display: block;
     }
 
     h1 {
@@ -264,112 +317,74 @@ a {
         font-size: 7vw;
     }
 
-    #navbar-list-index {
+    .navbar-list-left {
         display: none;
+    }
+
+    #navbar-homebutton-index a {
+        color: #feffff;
+        font-style: italic;
     }
 
     .navbar-container {
-        font-size: 2vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 1%;
-        width: 100%;
-    }
-    
-    .navbar-list-left {
-        display: none;
-        flex-basis: 100%;
-        flex-direction: row;
-        justify-content: left;
-        top: 0;
-        width: 100%;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        max-width: 100%;
-    }
-    
-    .navbar-logo {
-        display: flex;
-        color: #feffff;
-        text-align: center;
-        text-decoration: none;
-    }
-    
-    .navbar-logo a {
-        display: flex;
-        color: #feffff;
-        text-align: center;
-        padding: 0 40px;
-        text-decoration: none;
-        font-size: 2vw;
-        font-weight: 500;
-        font-style: italic;
-    }
-    
-    
-    .navbar-list {
-        display: flex;
-        flex-direction: column;
+        background-color: #171717;
+        /* alt farge: #135040 */
         position: fixed;
-        flex-basis: 70%;
-        justify-content: center;
         top: 0;
-        width: 100%;
-        list-style-type: none;
+        height: 4vh;
         margin: 0;
         padding: 0;
-        max-width: 100%;
-        width: 20%;
-        margin-left: 80%;
-        margin-top: 0;
-        height: 100%;
+        border-bottom: #171717 solid 0.1vh;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        display: block;
+    }
+
+    .navbar-list {
+        flex-basis: auto;
     }
 
     .navbar-item {
-        padding: 0;
-        margin: 0;
-        margin-right: -20%;
     }
-    
-    .navbar-item a{
-        display: flex;
-        color: #feffff;
-        text-align: right;
-        text-decoration: none;
-        font-size: 2.5vw;
-        background-color: #171717;
-        padding: 15% 0;
-        border-radius: 1vw;
-        width: 75%;
-        justify-content: center;
-        margin: 4vw 0;
-        padding: 15% 0%;
+
+    .navbar-item a {
+        align-items: center;
+        padding: 1vh;
+        width: 100%;
+        text-align: center;
+        font-size: 1.8vh;
+        color: #28d8a9;
+        font-weight: 400;
     }
-    
-    .navbar-item a:hover {
-        color: #129c78;
-    }
+
     .index-container {
         flex-direction: column-reverse;
-        padding-top: 4%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+        margin-top: 0;
     }
 
     .index-buttons {
+        text-align: center;
         flex-wrap: wrap;
-        flex-direction: row;
-        width: 60%;
-        padding-left: 4%;
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 10%;
     }
 
     .index-buttons a {
-        font-size: 3.4vw;
+        font-size: 4vw;
+        padding: 2vh;
+        margin: 5% 0;
     }
 
     #index-left {
         max-width: 800px;
         max-height: 450px;
+        flex-basis: auto;
     }
 
     #index-left img {
@@ -390,6 +405,7 @@ a {
 
     #index-right {
         margin-bottom: -5%;
+        flex-basis: auto;
     }
 
     .contentInvest p{
@@ -403,6 +419,10 @@ a {
         flex-direction: column;
     }
 
+    .footer-index {
+        bottom: 0;
+    }
+
 }
 
 .test-wrapper {
@@ -413,6 +433,7 @@ a {
     text-align: left;
     position: relative;
     left: 2rem;
+    margin-right: 20%;
 }
 
 .projects{
@@ -454,6 +475,7 @@ a {
     width: auto;
 
 }
+
 .investbtn h4{
     font-size: 2vw;
     margin: 0.5em;
@@ -464,7 +486,18 @@ a {
     color: whitesmoke;
     width: 5em;
 }
+
 .investbtn h4:hover{
     background-color: #171717;
     color: #129c78;
+}
+
+@media screen and (min-height: 1020px) and (max-height: 1500px){
+
+    .footer-index {
+        position: auto;
+        bottom: auto;
+        padding-top: 2%;
+    }
+
 }
