@@ -222,6 +222,32 @@ a {
     margin: 0.25%;
 }
 
+.about {
+    margin-left: 5%;
+    margin left: 5%;
+}
+
+.our-team{
+    display: flex;
+}
+
+.team-members{
+    background-color: #0f7056;
+    color: #feffff;
+    margin: 0.25%;
+    border-radius: 1.5vw;
+    padding: 1%;
+    max-width: 28%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-members img{
+    max-width: 100%;
+    border-radius: 1.5vw;
+    
+
+}
 
 .footer {
     padding-top: 10%;
