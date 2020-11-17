@@ -227,6 +227,18 @@ a {
     margin left: 5%;
 }
 
+.about p{
+    max-width: 80%;
+}
+
+.about a{
+    text-decoration: none;
+    color: #feffff;
+    background-color: #129c78;
+    border-radius: 1.5vw;
+    padding: 2%;
+}
+
 .our-team{
     display: flex;
 }
