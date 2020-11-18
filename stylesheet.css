@@ -319,6 +319,10 @@ a {
 
 @media screen and (min-width: 1201px){
 
+    .index-text {
+        padding-left: 1.45%;
+    }
+
     #index-left video {
         display: block;
     }
@@ -341,6 +345,10 @@ a {
     }
 
     #index-mobile-header {
+        display: none;
+    }
+
+    #navbar-homebutton-index {
         display: none;
     }
 }
@@ -383,7 +391,6 @@ a {
 
     .navbar-container {
         background-color: #171717;
-        /* alt farge: #135040 */
         position: fixed;
         top: 0;
         height: 4vh;
@@ -429,15 +436,15 @@ a {
         text-align: center;
         flex-wrap: wrap;
         flex-direction: column;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-top: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-top: 2vh;
     }
 
     .index-buttons a {
-        font-size: 4vw;
-        padding: 2vh;
-        margin: 5% 0;
+        font-size: 3vw;
+        padding: 1.5vh;
+        margin: 1vh 0;
     }
 
     #index-left {
@@ -480,6 +487,10 @@ a {
 
     .footer-index {
         bottom: 0;
+    }
+
+    #index-mobile-header {
+        padding-top: 4vh;
     }
 
 }
@@ -549,14 +560,4 @@ a {
 .investbtn h4:hover{
     background-color: #171717;
     color: #129c78;
-}
-
-@media screen and (min-height: 1020px) and (max-height: 1500px){
-
-    .footer-index {
-        position: auto;
-        bottom: auto;
-        padding-top: 2%;
-    }
-
 }
