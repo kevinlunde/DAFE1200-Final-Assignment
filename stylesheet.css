@@ -202,9 +202,10 @@ a {
 }
 
 .why img{
+    height: 100%;
     max-width: 100%;
-    max-height: 100%;
     border-radius: 1.5vw;
+    object-fit: cover;
 }
 
 .flexbox-why{
@@ -219,6 +220,7 @@ a {
     margin: 0.25%;
     padding: 1%;
     color: antiquewhite;
+    font-size: vw;
 }
 
 .why-bilde{
@@ -277,6 +279,15 @@ a {
     border-radius: 1.5vw;
     
 
+}
+
+.source{
+    background-color: #0f7056;
+    color: #feffff;
+    border-radius: 1.5vw;
+    padding: 1%;
+    width: 80%;
+    margin-top: 2%;
 }
 
 .footer {
