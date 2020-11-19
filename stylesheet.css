@@ -54,6 +54,7 @@ a {
     justify-content: center;
     padding-top: 1%;
     width: 100%;
+    z-index: 42;
 }
 
 .navbar-list-left {
@@ -349,6 +350,140 @@ a {
     padding-left: 0.4vw;
 }
 
+.test-wrapper {
+    margin-right: 35%;
+}
+
+.contentInvest{
+    text-align: left;
+    position: relative;
+    left: 2rem;
+    margin-right: 20%;
+}
+
+.learnMore{
+    text-decoration: none;
+    padding: 1%;
+    margin: 0;
+    background-color: #0f7056;
+    width: auto;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 400;
+}
+.learnMore a{
+    font-size: 1.5vw;
+}
+.learnMore:hover{
+    background-color: white;
+    color: #0f7056;
+}
+
+.projects{
+    text-align: center;
+}
+
+.flexProjects{
+    display: flex;
+}
+
+.projectN{
+    margin: 1em;
+    padding: 1em;
+    background-color: #0f7056;
+    /*background-color: #feffff;*/
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectN img{
+    width: 90%;
+    border-radius: 1.5vw;
+}
+
+.projectHead{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.projectHead img{
+    width: 70%;
+    border-radius: unset;
+    position: relative;
+    left: 2.5vw;
+}
+.projectHead span{
+    flex-basis: 20%;
+}
+
+.projectHead div{
+    flex-basis: 20%;
+}
+
+.projectHead h3{
+    flex-basis: 60%;
+}
+
+.projectNtop{
+    position: relative;
+    top: 1.5em;
+}
+
+.projectNarea1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.projectNarea1 img{
+    width: 20%;
+    border-radius: unset;
+    position: relative;
+    right: 0.7vw;
+}
+
+.investText1{
+    text-align: right;
+    position: relative;
+    right: 1.5vw;
+    flex-basis: 50%;
+}
+.investText2{
+    text-align: left;
+    position: relative;
+    left: 1.5vw;
+    flex-basis: 50%;
+}
+
+.investbtn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2%;
+    width: auto;
+}
+
+.investbtn h4{
+    font-size: 2vw;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: #129c78;
+    border: none;
+    border-radius: 6px;
+    color: whitesmoke;
+    width: 5em;
+}
+
+.investbtn h4:hover{
+    background-color: #171717;
+    color: #129c78;
+}
+
 @media screen and (max-width: 1500px){
     .navbar-container a {
         font-size: 1.8vw;
@@ -521,7 +656,23 @@ a {
         font-size: 5vw;
         text-align: left;
         position: relative;
-        right: 2em;
+        right: 0;
+    }
+
+    .learnMore{
+        font-size: 5vw;
+        padding: 4vw;
+    }
+
+    .projectN img{
+        border-radius: 3vw;
+    }
+
+    .projectN p{
+        font-size: 5vw;
+    }
+    .projectN h3{
+        font-size: 7vw;
     }
 
     .flexProjects{
@@ -548,73 +699,6 @@ a {
         padding-top: 4vh;
     }
 
-}
-
-.test-wrapper {
-    margin-right: 35%;
-}
-
-.contentInvest{
-    text-align: left;
-    position: relative;
-    left: 2rem;
-    margin-right: 20%;
-}
-
-.projects{
-    text-align: center;
-}
-
-.flexProjects{
-    display: flex;
-}
-
-.projectN{
-    margin: 1em;
-    padding: 1em;
-    background-color: #0f7056;
-    /*background-color: #feffff;*/
-    border-radius: 10px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.projectN img{
-    width: 70%;
-}
-
-.projectN h5 img{
-    width: 10%;
-}
-.projectN h3 img{
-    width: 15%;
-}
-
-.investbtn{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 2%;
-    width: auto;
-
-}
-
-.investbtn h4{
-    font-size: 2vw;
-    margin: 0.5em;
-    padding: 0.5em;
-    background-color: #129c78;
-    border: none;
-    border-radius: 6px;
-    color: whitesmoke;
-    width: 5em;
-}
-
-.investbtn h4:hover{
-    background-color: #171717;
-    color: #129c78;
 }
 
 
