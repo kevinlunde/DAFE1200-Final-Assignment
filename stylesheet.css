@@ -209,15 +209,27 @@ a {
     object-fit: cover;
 }
 
+#why-img-1{
+    height: 25vw;
+}
+
+#why-img-2{
+    height: 27vw;
+}
+
+#why-img-3{
+    height: 36vw;
+}
+
 .flexbox-why{
     display: flex;
-    padding-top: 2%;
+    margin-top: 2%;
+    background-color: #0f7056;
+    border-radius: 1.5vw;
 }
 
 .why-tekst{
     width: 70%;
-    background-color: #0f7056;
-    border-radius: 1.5vw;
     margin: 0.25%;
     padding: 1%;
     color: antiquewhite;
@@ -230,13 +242,13 @@ a {
     margin: 0.25%;
 }
 .why button{
-    background-color: #0f7056;
-    border-radius: 1.5vw;
-    text-decoration: none;
     font-size: 3vw;
-    border-color: #171717;
-    color: #feffff;
     margin: 2%;
+}
+
+.flexbox-why-top{
+    display: flex;
+    justify-content: space-between;
 }
 
 #link-sources{
