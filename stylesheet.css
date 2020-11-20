@@ -372,7 +372,7 @@ a {
 .contentInvest{
     text-align: left;
     position: relative;
-    left: 2rem;
+    margin-left: 4%;
     margin-right: 20%;
 }
 
@@ -397,6 +397,7 @@ a {
 
 .projects{
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .flexProjects{
@@ -443,36 +444,26 @@ a {
     flex-basis: 60%;
 }
 
-.projectNtop{
-    position: relative;
-    top: 1.5em;
-}
-
-.projectNarea1{
+.projectNarea{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column;
 }
 
-.projectNarea1 img{
-    width: 20%;
+.projectNarea h5{
+    font-size: 1.5vw;
+    margin-top: 0;
+}
+
+.projectNarea img{
+    width: 10%;
     border-radius: unset;
     position: relative;
-    right: 0.7vw;
+    right: 2vw;
 }
 
 .investText1{
-    text-align: right;
     position: relative;
     right: 1.5vw;
-    flex-basis: 50%;
-}
-.investText2{
-    text-align: left;
-    position: relative;
-    left: 1.5vw;
-    flex-basis: 50%;
 }
 
 .investbtn{
@@ -674,13 +665,30 @@ a {
         right: 0;
     }
 
+    .projectNarea h5{
+        font-size: 5vw;
+    }
+
     .learnMore{
         font-size: 5vw;
         padding: 4vw;
     }
 
+    .projectNtop span img{
+        position: relative;
+        left: 10vw;
+    }
+
     .projectN img{
         border-radius: 3vw;
+    }
+
+    .projectHead img{
+        border-radius: unset;
+    }
+
+    .projectNarea img{
+        border-radius: unset;
     }
 
     .projectN p{
@@ -692,6 +700,10 @@ a {
 
     .flexProjects{
         flex-direction: column;
+    }
+
+    .investbtn h4{
+        font-size: 6vw;
     }
 
     .footer-index {
