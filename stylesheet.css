@@ -145,7 +145,6 @@ a {
 #index-right {
     flex-basis: 51%;
     justify-self: center;
-    align-items: top;
     order: 2;
 }
 
@@ -233,7 +232,7 @@ a {
     margin: 0.25%;
     padding: 1%;
     color: antiquewhite;
-    font-size: vw;
+    font-size: 2vw;
 }
 
 .why-bilde{
@@ -255,19 +254,50 @@ a {
     
 }
 
-.get-form{
-    margin-left: 3%;
+.getContent{
+    text-align: left;
+    margin-left: 4%;
+    margin-right: 20%;
 }
 
-.get-inputt{
-    text-decoration: none;
-    border: none;
-    width: 80%;
-    border-radius: 1.5vw;
-    font-size: 1.5vw;
-    border-bottom: #171717;
-    padding: 0.75%;
+.get-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.get-input{
+    text-decoration: none;
+    width: 100%;
+    /*
+    border-radius: 1.5vw;
+     */
+    font-size: 1.5vw;
+    padding: 0.75%;
+    font-family: 'Roboto', sans-serif;
+    background: none;
+    border: none;
+}
+
+.get-form input, select{
+    border-bottom: solid #171717;
+}
+
+.get-form ::placeholder{
+    color: silver;
+    opacity: 0.8;
+}
+
+#submitBtn, #formTextarea{
+    background: #feffff;
+    border: none;
+    border-radius: 1.5vw;
+}
+
+.selectDiv{
+    border-bottom: solid #171717;
+    margin-bottom: 0;
+    width: 101.5%;
 }
 
 .about {
@@ -338,7 +368,7 @@ a {
     flex-basis: 33%;
     text-align: center;
     padding-left: 1%;
-    margin-bottom: 0.%;
+    margin-bottom: 0.5%;
 }
 
 #footer-address {
@@ -375,10 +405,6 @@ a {
     font-size: 1vw;
     padding-top: 0.4vw;
     padding-left: 0.4vw;
-}
-
-.test-wrapper {
-    margin-right: 35%;
 }
 
 .contentInvest{
@@ -660,14 +686,61 @@ a {
     #index-left video {
         width: 75%;
         height: 50%;
-        padding-top: none;
-        margin-top: none;
+        padding-top: 0;
+        margin-top: 0;
         padding-left: 3%;
     }
 
     #index-right {
         margin-bottom: -5%;
         flex-basis: auto;
+    }
+
+    .getContent p{
+        font-size: 5vw;
+    }
+
+    .getContent h3{
+        font-size: 8vw;
+    }
+
+
+    .get-form form{
+        margin-left: 4%;
+        margin-right: 0;
+    }
+
+    #submitBtn{
+        width: 76.5%;
+    }
+
+    #selectForm{
+        width: 76.5%;
+    }
+
+    .selectDiv{
+        width: 76.5%;
+    }
+
+    .get-form label{
+        font-size: 5vw;
+        margin-right: 7%;
+        display: inline-block;
+    }
+
+    #labelYes, #labelNo{
+        margin-right: 10%;
+        display: unset;
+    }
+
+    #labelYesNo{
+        width: fit-content;
+    }
+
+
+    .get-input{
+        width: 75%;
+        font-size: 5vw;
     }
 
     .contentInvest p{

@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="stylesheet.css">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-   <title>Final Asigment</title>
+   <title>Final Assigment</title>
 </head>
 <body>
 
@@ -23,17 +23,99 @@
    </div>
 
 
-   <div class="test-wrapper">
-      <h1>Get Sol</h1>
-      <p>When you want to get Sol Energy you will have to fill out the form on this page. If you have selected a solar array already and only want the investors you can fill out <a>“this form”</a>. And if you have not made any arrangement about what solar array you want, we can help you with that too, then u have to fill out <a>“this form”</a>, and we will take care of the rest.</P> 
-      <p>By being a part of this project, you will help the environment a lot, you will be part of getting rid of coal and gas as a power-source. It will also have an impact on not building as much windmills, which are bad for birds, or building large scale solar parks which take up huge landsites. <a href="why.html">“learn more”</a></p>
-      <p>When filling out the form it’s a few things that can be nice to be aware of. You have the option to not be a part of the investment, but you can also be one of the investors if you want. You have also the option to buy back parts of the solar array either through monthly buybacks, or by making a deal with the investors.</p>  
-      <p>A little about the process, after you have filled out the form, we will contact you and make a contract before your project go live. After the project goes live, the investors will see your project and begin putting down an investment. When our money-goal is reached we will be beginning the process of paying out the invested money to the ones who are installing the solar array. </p>
-      
-      <h2>Fill out one of this form, to start the process of getting SOL</h2>
-      <a href="get-form1.html"><button>Only looking for investors</button></a> 
-      <a href="get-form2.html"><button>I need help choosing a solar array</button></a>
-      </div>
+    <div class="getContent">
+        <h1>Get Sol</h1>
+        <p>When you want to get Sol Energy you will have to fill out the form on this page.
+            By being a part of this project, you will help the environment a lot, you will be part of getting rid of
+           coal and gas as a power-source. It will also have an impact on not building as much windmills, which are
+           bad for birds, or building large scale solar parks which take up huge landsites.
+        </p>
+
+        <br><br>
+        <a href="why.html" class="learnMore">Click here to learn more!</a>
+        <br><br>
+
+        <p>When filling out the form it’s a few things that can be nice to be aware of. You have the
+           option to not be a part of the investment, but you can also be one of the investors if you want.
+           You have also the option to buy back parts of the solar array either through monthly buybacks, or by making
+           a deal with the investors.
+        </p>
+        <p>A little about the process, after you have filled out the form, we will contact you and make
+           a contract before your project go live. After the project goes live, the investors will see
+           your project and begin putting down an investment. When our money-goal is reached we will be
+           beginning the process of paying out the invested money to the ones who are installing the solar array.
+        </p>
+
+        <br><br>
+
+        <h3>Fill in the form below:</h3>
+        <br><br>
+    </div>
+
+
+
+    <div class="get-form">
+        <form>
+            <label for="formName" class="get-input">What is your or your company's name? </label><br>
+            <input id="formName" type="text" class="get-input" placeholder="Full name, or name of company" required><br>
+
+            <br>
+
+            <label for="formEmail" class="get-input">What is your e-mail adress?</label><br>
+            <input id="formEmail" type="email" class="get-input" placeholder="E-mail" required><br>
+
+            <br>
+
+            <label for="selectForm" class="get-input">Choose what you are</label> <br>
+            <div class="selectDiv">
+                <select class="get-input" id="selectForm" required>
+                    <option value=""></option>
+                    <option value="Company">Company</option>
+                    <option value="Private house">Private house</option>
+                    <option value="Goverment">Goverment</option>
+                </select>
+            </div>
+
+
+            <br>
+
+            <label for="formCountry" class="get-input">Input your country</label><br>
+            <input id="formCountry" type="text" class="get-input" placeholder="Country" required><br>
+
+            <br>
+
+            <label for="formSize" class="get-input">How big is your planed solar array in kWh?</label><br>
+            <input id="formSize" type="number" class="get-input" placeholder="kWh" required><br>
+
+            <br>
+
+            <label for="formCost" class="get-input">How much is the total cost of solar installation in USD?</label><br>
+            <input id="formCost" type="number" class="get-input" placeholder="Leave blank if unknown"><br>
+
+            <br>
+
+            <label class="get-input" id="labelYesNo">Will you be an co-investor in the project?</label><br>
+            <input type="radio" id="formYes" name="Yes/no" value="Yes">
+            <label for="formYes" class="get-input" id="labelYes">Yes</label>
+            <input type="radio" id="formNo" name="Yes/no" value="No">
+            <label for="formNo" class="get-input" id="labelNo">No</label><br>
+
+            <br>
+
+            <label for="formInvest" class="get-input" id="labelInvestSelf">If yes, how much to you want to invest in USD?</label><br>
+            <input id="formInvest" type="number" class="get-input" placeholder="Your investment in USD"><br>
+
+            <br>
+
+            <label for="formTextarea" class="get-input">Optional message</label><br>
+            <textarea id="formTextarea" class="get-input" rows="4" cols="50" placeholder="Your message"></textarea>
+            <br><br>
+
+            <br>
+
+            <input class="get-input" id="submitBtn" type="submit" value="Submit">
+        </form>
+    </div>
 
   <div class="footer">
     <p id="footer-copyright">© Sol Invest AS. All rights reserved.</p>
