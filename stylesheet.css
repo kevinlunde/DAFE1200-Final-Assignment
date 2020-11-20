@@ -243,6 +243,21 @@ a {
     
 }
 
+.get-form{
+    margin-left: 3%;
+}
+
+.get-inputt{
+    text-decoration: none;
+    border: none;
+    width: 80%;
+    border-radius: 1.5vw;
+    font-size: 1.5vw;
+    border-bottom: #171717;
+    padding: 0.75%;
+
+}
+
 .about {
     margin-left: 5%;
     margin-right:5%;

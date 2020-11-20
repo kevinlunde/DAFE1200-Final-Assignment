@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="stylesheet.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+   <title>Final Asigment</title>
+</head>
+<body>
+
+   <div class="navbar-container">
+      <ul class="navbar-list-left">
+        <li class="navbar-logo"><a href="index.html">SOL INVEST <span id="desktop-home-button">back to home</span></a></li>  
+      </ul>
+      <ul class="navbar-list">
+        <li class="navbar-item" id="navbar-homebutton"><a href="index.html">Home</a></li>
+        <li class="navbar-item"><a href="why.html">Why Sol</a></li>
+        <li class="navbar-item"><a href="invest.html">Invest</a></li>
+        <li class="navbar-item"><a id="active" href="get.html">Get Sol</a></li>
+        <li class="navbar-item"><a href="about.html">About</a></li>
+      </ul>
+   </div>
+
+   <div class="get-form">
+       <h2>I am only looking for investors</h2>
+       <form>
+           <label for="Name" class="get-inputt">Name: </label><br>
+           <input type="text" class="get-inputt" placeholder="Full name, or name of company"><br>
+           
+           <label for="e-mail" class="get-inputt">E-mail</label><br>
+           <input type="text" class="get-inputt"placeholder="E-mail"><br>
+          
+           <label for="company-private" class="get-inputt">Choose what you are</label> <br>
+           <select name="company-private" class="get-inputt">
+             <option value="Company">Company</option>
+             <option value="Private house">Private house</option>
+             <option value="Goverment">Goverment</option>
+           </select>
+           <br>
+
+           <label for="Country" class="get-inputt">Country</label><br>
+           <input type="text" class="get-inputt" placeholder="Country"><br>
+
+           <label for="Size" class="get-inputt">How big is your planed solar array in kWh</label><br>
+           <input type="text" class="get-inputt" placeholder="kWh"><br>
+
+           <label for="Cost" class="get-inputt">How much is the total cost of solar installation</label><br>
+           <input type="text" class="get-inputt" placeholder="Price in USD"><br>
+
+           <label for="co-invest" class="get-inputt">Be an co-investor in your project?</label><br>
+           <input type="radio" name="Yes/no" value="Yes">
+           <label for="Yes" class="get-inputt">Yes</label><br>
+           <input type="radio" id="No" name="Yes/no" value="No">
+           <label for="No" class="get-inputt">No</label><br>
+
+           <label for="invest" class="get-inputt">If yes, how much to you want to invest in USD?</label><br>
+           <input type="text" class="get-inputt" placeholder="In USD"><br>
+
+           <label for="message" class="get-inputt">Optionale message</label><br>
+           <input type="text-area" class="get-inputt" placeholder="Optional text">
+           <br><br>
+
+           <input class="get-inputt" type="submit" value="Submit">
+
+       </form>
+   </div>   
+
+  <div class="footer">
+    <p id="footer-copyright">© Sol Invest AS. All rights reserved.</p>
+    <p id="footer-address">Loremgata 24, 0558 OSLO</p>
+    <p id="footer-mail">support@solinvest.no</p>
+  </div>
+
+</body>
+</html>
