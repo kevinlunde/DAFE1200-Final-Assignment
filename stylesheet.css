@@ -270,7 +270,8 @@ a {
 .get-form{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 4%;
 }
 
 .get-input{
@@ -284,6 +285,8 @@ a {
     font-family: 'Roboto', sans-serif;
     background: none;
     border: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .get-form input, select{
@@ -291,7 +294,7 @@ a {
 }
 
 .get-form ::placeholder{
-    color: silver;
+    color: #114739;
     opacity: 0.8;
 }
 
@@ -301,10 +304,38 @@ a {
     border-radius: 1.5vw;
 }
 
+#formTextarea {
+    padding: 1.5%;
+}
+
+#submitBtn {
+    background-color: #0f7056;
+    color: #feffff;
+    font-weight: 300;
+    padding: 2%;
+    cursor: pointer;
+    width: 40%;
+}
+
+
+#submitBtn:hover {
+    background-color: #feffff;
+    color: #0f7056;
+}
+
 .selectDiv{
     border-bottom: solid #171717;
     margin-bottom: 0;
     width: 101.5%;
+}
+
+#get-input-yes-no {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#get-input-message {
+    margin-top: 3%;
 }
 
 .about {
@@ -375,24 +406,39 @@ a {
 #jonathan p {font-weight: 300;}
 
 .source{
-    background-color: #0f7056;
     color: #feffff;
     border-radius: 1.5vw;
     padding: 1%;
     width: 80%;
     margin-top: 2%;
+    padding-left: 0;
 }
 
+.source p {
+    color: #171717;
+}
+
+.sources-page {
+    margin-left: 3%;
+    margin-top: 2%;
+    font-family: 'Roboto';
+}
+
+
 .footer {
-    padding-top: 10%;
+    margin-top: 10%;
     display: flex;
     justify-content: space-around;
     width: 100%;
     bottom: 0;
+    background-color: #0f7056;
 }
 
 .footer p {
     font-size: 1vw;
+    margin: 0;
+    margin-top: 0.5%;
+    color: #feffff;
 }
 
 .footer-index p {
@@ -428,12 +474,18 @@ a {
 }
 
 .footer-index {
-    padding-top: 10%;
     display: flex;
     justify-content: space-around;
     width: 100%;
     position: absolute; 
     bottom: 0;
+    background-color: #0f7056;
+}
+
+.footer-index p {
+    color: #feffff;
+    margin: 0;
+    margin-top: 0.5%;
 }
 
 #desktop-home-button {
@@ -449,7 +501,7 @@ a {
     margin-right: 20%;
 }
 
-.learnMore{
+.button-class{
     text-decoration: none;
     margin: 0;
     background-color: #0f7056;
@@ -461,7 +513,7 @@ a {
     padding: 0.5vw;
 }
 
-.learnMore p {
+.button-class p {
     color: #feffff;
     font-size: 2vw;
     margin: 0;
@@ -469,18 +521,26 @@ a {
 }
 
 
-.learnMore:hover{
+.button-class:hover{
     background-color: #feffff;
     color: #0f7056;
 }
 
-.learnMore p:hover{
+.button-class:hover p{
     color: #0f7056;
+}
+
+
+#learn-more {
+    color: #171717;
+    font-weight: 400;
+    font-size: 1.5vw;
 }
 
 .projects{
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    margin-top: 1%;
 }
 
 .flexProjects{
@@ -625,6 +685,15 @@ a {
     }
 }
 
+@media screen and (min-aspect-ratio: 1024/1366) and (max-aspect-ratio: 25/16) and (max-width: 1200px){
+
+    .footer-index {
+        position: unset;
+        flex-direction: row;
+    }
+
+}
+
 @media screen and (max-width: 1200px){
 
     #active {
@@ -754,6 +823,10 @@ a {
         font-size: 8vw;
     }
 
+    #learn-more {
+        font-size: 5vw;
+    }
+
 
     .get-form form{
         margin-left: 4%;
@@ -793,18 +866,24 @@ a {
         font-size: 5vw;
     }
 
+    .getContent {
+        margin-right: 4%;
+    }
+
+    .contentInvest {
+        margin-right: 4%;
+    }
+
     .contentInvest p{
         font-size: 5vw;
         text-align: left;
-        position: relative;
-        right: 0;
     }
 
     .projectNarea h5{
         font-size: 5vw;
     }
 
-    .learnMore{
+    .button-class {
         font-size: 5vw;
         padding: 1vw;
     }
@@ -843,14 +922,21 @@ a {
 
     .footer-index {
         bottom: 0;
+        flex-direction: column;
+        padding-top: 1%;
     }
 
     .footer-index p {
-        font-size: 2vw;
+        font-size: 3vw;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding-top: 1%;
     }
 
     .footer p {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     #index-mobile-header {
@@ -864,10 +950,7 @@ a {
 }
 
 
-@media screen and (min-aspect-ratio: 307/384) and (max-aspect-ratio: 25/16) and (max-width: 1200px){
-
-    .footer-index {
-        position: unset;
-    }
-
+.source-item {
+    font-size: 1vw;
+    color: rgb(55, 55, 255);
 }

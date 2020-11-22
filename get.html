@@ -28,12 +28,8 @@
         <p>When you want to get Sol Energy you will have to fill out the form on this page.
             By being a part of this project, you will help the environment a lot, you will be part of getting rid of
            coal and gas as a power-source. It will also have an impact on not building as much windmills, which are
-           bad for birds, or building large scale solar parks which take up huge landsites.
+           bad for birds, or building large scale solar parks which take up huge landsites. <a href="why.html" id="learn-more">Click to learn more.</a>
         </p>
-
-        <br><br>
-        <a href="why.html" class="learnMore">Click here to learn more!</a>
-        <br><br>
 
         <p>When filling out the form it’s a few things that can be nice to be aware of. You have the
            option to not be a part of the investment, but you can also be one of the investors if you want.
@@ -56,17 +52,17 @@
 
     <div class="get-form">
         <form>
-            <label for="formName" class="get-input">What is your or your company's name? </label><br>
+            <label for="formName" class="get-input">What is your or your company's name?*</label><br>
             <input id="formName" type="text" class="get-input" placeholder="Full name, or name of company" required><br>
 
             <br>
 
-            <label for="formEmail" class="get-input">What is your e-mail adress?</label><br>
+            <label for="formEmail" class="get-input">What is your e-mail adress?*</label><br>
             <input id="formEmail" type="email" class="get-input" placeholder="E-mail" required><br>
 
             <br>
 
-            <label for="selectForm" class="get-input">Choose what you are</label> <br>
+            <label for="selectForm" class="get-input">Choose what you are*</label> <br>
             <div class="selectDiv">
                 <select class="get-input" id="selectForm" required>
                     <option value=""></option>
@@ -79,26 +75,27 @@
 
             <br>
 
-            <label for="formCountry" class="get-input">Input your country</label><br>
+            <label for="formCountry" class="get-input">Input your country*</label><br>
             <input id="formCountry" type="text" class="get-input" placeholder="Country" required><br>
 
             <br>
 
-            <label for="formSize" class="get-input">How big is your planned solar array in kWh?</label><br>
+            <label for="formSize" class="get-input">How big is your planned solar array in kWh?*</label><br>
             <input id="formSize" type="number" class="get-input" placeholder="kWh" required><br>
 
             <br>
 
             <label for="formCost" class="get-input">How much is the total cost of solar installation in USD?</label><br>
-            <input id="formCost" type="number" class="get-input" placeholder="Leave blank if unknown"><br>
+            <input id="formCost" type="number" class="get-input" placeholder="(optional)"><br>
 
             <br>
-
+            <div id="get-input-yes-no">
             <label class="get-input" id="labelYesNo">Will you be an co-investor in the project?</label><br>
             <input type="radio" id="formYes" name="Yes/no" value="Yes">
             <label for="formYes" class="get-input" id="labelYes">Yes</label>
             <input type="radio" id="formNo" name="Yes/no" value="No">
             <label for="formNo" class="get-input" id="labelNo">No</label><br>
+            </div>
 
             <br>
 
@@ -107,7 +104,7 @@
 
             <br>
 
-            <label for="formTextarea" class="get-input">Optional message</label><br>
+            <label for="formTextarea" class="get-input" id="get-input-message">Message (optional)</label><br><br>
             <textarea id="formTextarea" class="get-input" rows="4" cols="50" placeholder="Your message"></textarea>
             <br><br>
 
