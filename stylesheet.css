@@ -366,11 +366,6 @@ a {
     color: #0f7056;
 }
 
-.our-team{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
 
 #mission-statement {
     font-size: 1.6vw;
@@ -384,8 +379,8 @@ a {
     margin: 1%;
     border-radius: 1.5vw;
     padding: 1%;
-    max-width: 28%;
     flex-wrap: wrap;
+    width: 28%;
     justify-content: center;
     text-align: center;
 }
@@ -543,13 +538,8 @@ a {
     margin-top: 1%;
 }
 
-.flexProjects{
+.thre-colum-layout{
     display: flex;
-}
-
-.flexProjects p {
-    color: #feffff;
-    font-weight: 500;
 }
 
 .projectN{
@@ -612,6 +602,10 @@ a {
 .investText1{
     position: relative;
     right: 1.5vw;
+}
+
+h3 span{
+    font-size: 1vw;
 }
 
 .investbtn{
@@ -888,11 +882,6 @@ a {
         padding: 1vw;
     }
 
-    .projectNtop span img{
-        position: relative;
-        left: 10vw;
-    }
-
     .projectN img{
         border-radius: 3vw;
     }
@@ -912,7 +901,7 @@ a {
         font-size: 7vw;
     }
 
-    .flexProjects{
+    .thre-colum-layout{
         flex-direction: column;
     }
 
