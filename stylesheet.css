@@ -814,6 +814,18 @@ h3 span{
         flex-basis: auto;
     }
 
+    .why p{
+        font-size: 3vw;
+    }
+    
+    .why-bilde{
+        display: none;
+    }
+
+    .why-tekst{
+        width: 95%;
+    }
+
     .getContent p{
         font-size: 5vw;
     }
