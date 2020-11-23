@@ -348,7 +348,7 @@ a {
 }
 
 .about p{
-    max-width: 80%;
+    width: 80%;
     font-weight: 400;
     line-height: 1.5;   
 }
@@ -814,10 +814,14 @@ h3 span{
         flex-basis: auto;
     }
 
-    .why p{
-        font-size: 3vw;
+    .why p, .why h2{
+        font-size: 4vw;
     }
-    
+
+    .why h3{
+        font-size: 8vw;
+    }
+
     .why-bilde{
         display: none;
     }
@@ -918,12 +922,29 @@ h3 span{
         font-size: 7vw;
     }
 
+    .projectN h3 span {
+        font-size: 2vw;
+    }
+
     .thre-colum-layout{
         flex-direction: column;
     }
 
     .investbtn h4{
         font-size: 6vw;
+    }
+
+    .about p{
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    #mission-statement{
+        font-size: 4vw;
+    }
+
+    #mission-statement{
+        margin-right: 0;
     }
 
     .footer-index {
