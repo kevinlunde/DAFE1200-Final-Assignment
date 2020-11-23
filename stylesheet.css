@@ -413,6 +413,10 @@ a {
     color: #171717;
 }
 
+.source a {
+    color: #171717;
+}
+
 .sources-page {
     margin-left: 3%;
     margin-top: 2%;
@@ -636,6 +640,8 @@ h3 span{
     background-color: #171717;
     color: #129c78;
 }
+
+
 
 @media screen and (max-width: 1500px){
     .navbar-container a {
