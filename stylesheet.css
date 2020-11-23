@@ -216,11 +216,11 @@ a {
 }
 
 #why-img-2{
-    height: 27vw;
+    height: 30.5vw;
 }
 
 #why-img-3{
-    height: 36vw;
+    height: 39vw;
 }
 
 .flexbox-why{
@@ -371,7 +371,7 @@ a {
     font-size: 1.6vw;
     margin-right: 20vw;
 }
-
+/*
 .team-members{
     display: flex;
     background-color: #0f7056;
@@ -394,7 +394,7 @@ a {
     margin-top: 5%;
     margin-bottom: 0;
     color: #feffff;
-}
+}*/
 
 #kevin p {font-weight: 300;}
 #elias p {font-weight: 300;}
@@ -547,15 +547,20 @@ a {
     padding: 1em;
     background-color: #0f7056;
     /*background-color: #feffff;*/
-    border-radius: 10px;
+    border-radius: 1.5vw;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 29%;
+}
+
+.projectN p{
+    color: #feffff;
 }
 
 .projectN img{
-    width: 90%;
+    max-width: 100%;
     border-radius: 1.5vw;
 }
 
@@ -882,16 +887,16 @@ h3 span{
         padding: 1vw;
     }
 
-    .projectN img{
-        border-radius: 3vw;
-    }
-
     .projectHead img{
         border-radius: unset;
     }
 
     .projectNarea img{
         border-radius: unset;
+    }
+
+    .projectN {
+        width: 90%;
     }
 
     .projectN p{
