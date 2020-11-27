@@ -559,8 +559,16 @@ a {
     width: 29%;
 }
 
+.projectN h3 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .projectN p{
     color: #feffff;
+    text-align: center;
+    width: 80%;
+    margin-top: 0;
 }
 
 .projectN img{
@@ -623,6 +631,10 @@ h3 span{
     flex-direction: row;
     margin-top: 2%;
     width: auto;
+}
+
+.investbtn a {
+    text-decoration: none;
 }
 
 .investbtn h4{
@@ -919,10 +931,13 @@ h3 span{
 
     .projectN {
         width: 90%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .projectN p{
         font-size: 5vw;
+        margin-left: 0;
     }
     .projectN h3{
         font-size: 7vw;
@@ -942,7 +957,12 @@ h3 span{
 
     .about p{
         font-size: 4vw;
-        width: 100%;
+        width: 80%;
+    }
+
+    .about a {
+        font-size: 3vw;
+        margin-bottom: 3%;
     }
 
     #mission-statement{
@@ -985,5 +1005,10 @@ h3 span{
 
 .source-item {
     font-size: 1vw;
-    color: rgb(55, 55, 255);
+    color: #6BC3FF;
+    text-decoration: none;
+}
+
+.source-item:visited {
+    color: #6BC3FF;
 }
