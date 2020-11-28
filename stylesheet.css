@@ -403,10 +403,9 @@ a {
 .source{
     color: #feffff;
     border-radius: 1.5vw;
-    padding: 1%;
     width: 80%;
     margin-top: 2%;
-    padding-left: 0;
+    padding: 1% 1% 1% 0;
 }
 
 .source p {
@@ -420,7 +419,7 @@ a {
 .sources-page {
     margin-left: 3%;
     margin-top: 2%;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -435,8 +434,7 @@ a {
 
 .footer p {
     font-size: 1vw;
-    margin: 0;
-    margin-top: 0.5%;
+    margin: 0.5% 0 0;
     color: #feffff;
 }
 
@@ -483,8 +481,7 @@ a {
 
 .footer-index p {
     color: #feffff;
-    margin: 0;
-    margin-top: 0.5%;
+    margin: 0.5% 0 0;
 }
 
 #desktop-home-button {
@@ -597,6 +594,11 @@ a {
 
 .projectHead h3{
     flex-basis: 60%;
+}
+
+.houseImg{
+    height: 17vw;
+    object-fit: cover;
 }
 
 .projectNarea{
@@ -953,6 +955,20 @@ h3 span{
 
     .investbtn h4{
         font-size: 6vw;
+    }
+
+    .houseImg{
+        width: 95%;
+        height: unset;
+        object-fit: unset;
+    }
+
+    #invest-project{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10%;
     }
 
     .about p{
