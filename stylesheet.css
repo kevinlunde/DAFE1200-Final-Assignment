@@ -257,10 +257,6 @@ a {
     justify-content: space-between;
 }
 
-#link-sources{
-    padding-top: 5vw;
-}
-
 .getContent{
     text-align: left;
     margin-left: 4%;
@@ -339,8 +335,8 @@ a {
 }
 
 .about {
-    margin-left: 5%;
-    margin-right:5%;
+    margin-left: 4%;
+    margin-right:4%;
 }
 
 .about h2 {
@@ -353,48 +349,11 @@ a {
     line-height: 1.5;   
 }
 
-.about a{
-    text-decoration: none;
-    color: #feffff;
-    background-color: #129c78;
-    border-radius: 1.5vw;
-    padding: 2%;
-}
-
-.about a:hover {
-    background-color: #feffff;
-    color: #0f7056;
-}
-
 
 #mission-statement {
     font-size: 1.6vw;
     margin-right: 20vw;
 }
-/*
-.team-members{
-    display: flex;
-    background-color: #0f7056;
-    color: #feffff;
-    margin: 1%;
-    border-radius: 1.5vw;
-    padding: 1%;
-    flex-wrap: wrap;
-    width: 28%;
-    justify-content: center;
-    text-align: center;
-}
-
-.team-members img{
-    max-width: 100%;
-    border-radius: 1.5vw;
-}
-
-.team-members h3, .team-members p, .team-members a {
-    margin-top: 5%;
-    margin-bottom: 0;
-    color: #feffff;
-}*/
 
 #kevin p {font-weight: 300;}
 #elias p {font-weight: 300;}
@@ -497,36 +456,6 @@ a {
     margin-right: 20%;
 }
 
-.button-class{
-    text-decoration: none;
-    margin: 0;
-    background-color: #0f7056;
-    width: auto;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    cursor: pointer;
-    padding: 0.5vw;
-}
-
-.button-class p {
-    color: #feffff;
-    font-size: 2vw;
-    margin: 0;
-    font-weight: 300;
-}
-
-
-.button-class:hover{
-    background-color: #feffff;
-    color: #0f7056;
-}
-
-.button-class:hover p{
-    color: #0f7056;
-}
-
-
 #learn-more {
     color: #171717;
     font-weight: 400;
@@ -541,6 +470,19 @@ a {
 
 .thre-colum-layout{
     display: flex;
+}
+
+#invest-project{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#project1{
+    margin-left: 0;
+}
+
+#project3{
+    margin-right: 0;
 }
 
 .projectN{
@@ -604,15 +546,19 @@ a {
 .projectNarea{
     display: flex;
     flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-left: 10%;
 }
 
-.projectNarea h5{
+.projectNarea p{
     font-size: 1.5vw;
     margin-top: 0;
+
 }
 
 .projectNarea img{
-    width: 10%;
+    width: 15%;
     border-radius: unset;
     position: relative;
     right: 2vw;
@@ -627,7 +573,7 @@ h3 span{
     font-size: 1vw;
 }
 
-.investbtn{
+.btn-div{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -635,27 +581,40 @@ h3 span{
     width: auto;
 }
 
-.investbtn a {
+.btn-div a {
     text-decoration: none;
 }
 
-.investbtn h4{
+.btn-div button{
     font-size: 2vw;
     margin: 0.5em;
-    padding: 0.5em;
+    padding: 0.2em;
     background-color: #129c78;
-    border: none;
-    border-radius: 6px;
-    color: whitesmoke;
+    border: #0f7056 solid 0.4vh;
+    border-radius: 3vh;
+    color: #feffff;
     width: 5em;
 }
 
-.investbtn h4:hover{
-    background-color: #171717;
+.about button{
+    width: 8em;
+}
+
+.btn-div button:hover{
+    background: #feffff;
     color: #129c78;
+    border: #feffff solid 0.4vh;
 }
 
 
+.invest-disc-div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.invest-disc img{
+    width: 5vw;
+}
 
 @media screen and (max-width: 1500px){
     .navbar-container a {
@@ -914,13 +873,8 @@ h3 span{
         text-align: left;
     }
 
-    .projectNarea h5{
+    .projectNarea p{
         font-size: 5vw;
-    }
-
-    .button-class {
-        font-size: 5vw;
-        padding: 1vw;
     }
 
     .projectHead img{
@@ -953,7 +907,10 @@ h3 span{
         flex-direction: column;
     }
 
-    .investbtn h4{
+    .btn-div h4{
+        font-size: 6vw;
+    }
+    .btn-div button{
         font-size: 6vw;
     }
 
@@ -964,21 +921,14 @@ h3 span{
     }
 
     #invest-project{
-        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 10%;
     }
 
     .about p{
         font-size: 4vw;
         width: 80%;
-    }
-
-    .about a {
-        font-size: 3vw;
-        margin-bottom: 3%;
     }
 
     #mission-statement{
