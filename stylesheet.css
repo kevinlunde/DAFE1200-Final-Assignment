@@ -662,6 +662,7 @@ h3 span{
     justify-content: center;
     align-content: center;
 }
+
 .invest-disc img{
     width: 5vw;
     height: 5vw;
@@ -1080,6 +1081,24 @@ option {
 
     .index-bottom p {
         font-size: 4vw;
+    }
+
+    .invest-disc-div {
+        margin-left: 4%;
+        margin-right: 4%;
+        background-color: #0f7056;
+        margin-bottom: 4%;
+        padding: 2%;
+        border-radius: 2vw;
+    }
+
+    .invest-disc-div p {
+        font-size: 3.5vw;
+        color: #feffff;
+    }
+
+    .invest-disc-div img {
+        padding-top: 3%;
     }
 
 }
