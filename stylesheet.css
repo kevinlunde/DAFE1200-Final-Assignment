@@ -408,25 +408,32 @@ a {
 #jonathan p {font-weight: 300;}
 
 .source{
-    color: #feffff;
+    background-color: #0f7056;
     border-radius: 1.5vw;
     width: 80%;
     margin-top: 2%;
-    padding: 1% 1% 1% 0;
+    padding: 1%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .source p {
-    color: #171717;
+    color: #feffff;
 }
 
 .source a {
-    color: #171717;
+    color: #feffff;
 }
 
 .sources-page {
     margin-left: 3%;
     margin-top: 2%;
     font-family: 'Roboto', sans-serif;
+}
+
+.sources-page h3{
+    margin-top: 2%;
 }
 
 
@@ -1118,6 +1125,15 @@ option {
 
     .invest-disc-div img {
         padding-top: 3%;
+    }
+    .source{
+        width: 94%;
+    }
+    .sources-page p, a{
+        font-size: 4vw;
+    }
+    .sources-page h3{
+        font-size: 7vw;
     }
 
 }
