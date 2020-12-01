@@ -297,15 +297,9 @@ a {
     margin-right: 20%;
 }
 
-.get-form{
-}
-
 .get-input{
     text-decoration: none;
     width: 100%;
-    /*
-    border-radius: 1.5vw;
-     */
     font-size: 1.5vw;
     padding: 0.75%;
     font-family: 'Roboto', sans-serif;
@@ -407,9 +401,17 @@ a {
     margin-right: 20vw;
 }
 
-#kevin p {font-weight: 300;}
-#elias p {font-weight: 300;}
-#jonathan p {font-weight: 300;}
+#kevin p {
+    font-weight: 300;
+}
+
+#elias p {
+    font-weight: 300;
+}
+
+#jonathan p {
+    font-weight: 300;
+}
 
 .source{
     background-color: #0f7056;
@@ -558,7 +560,6 @@ a {
     margin: 0.5%;
     padding: 2%;
     background-color: #0f7056;
-    /*background-color: #feffff;*/
     border-radius: 1.5vw;
     color: white;
     display: flex;
@@ -593,16 +594,13 @@ a {
 .projectHead img{
     width: 100%;
     border-radius: unset;
-    /*position: relative;
-    /*left: 1vw;*/
 }
 .projectHead span{
     width: 25%;
-   flex-basis: 20%;
+    flex-basis: 20%;
 }
 
 .projectHead p{
-    /*text-align: left;*/
     flex-basis: 20%;
     font-size: 1vw;
 }
@@ -872,7 +870,7 @@ option {
     }
 
     .index-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
         align-items: center;
         justify-content: center;
