@@ -335,7 +335,12 @@ a {
 
 .get-form ::placeholder{
     color: #c2c2c2;
-    opacity: 0.8;
+}
+
+.get-form fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 #submitBtn, #formTextarea{
@@ -952,7 +957,6 @@ option {
     #learn-more {
         font-size: 5vw;
     }
-    
 
     .get-form {
         margin-right: 4%;
@@ -962,6 +966,10 @@ option {
     .get-form form{
         margin-left: 4%;
         margin-right: 0;
+    }
+
+    .get-form ::placeholder{
+        color: #2d2d2d;
     }
 
     #submitBtn{
