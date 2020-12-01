@@ -1178,7 +1178,7 @@ option {
     }
 }
 
-@media screen and (min-aspect-ratio: 263/128) and (min-width: 1200px) {
+@media screen and (min-aspect-ratio: 1234/700) and (min-width: 1200px) {
     .footer-index{
         position: unset;
     }
