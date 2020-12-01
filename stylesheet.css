@@ -1171,3 +1171,15 @@ option {
     }
 
 }
+
+@media screen and (min-width: 2160px){
+    .index-bottom{
+        padding-bottom: unset;
+    }
+}
+
+@media screen and (min-aspect-ratio: 263/128) and (min-width: 1200px) {
+    .footer-index{
+        position: unset;
+    }
+}
